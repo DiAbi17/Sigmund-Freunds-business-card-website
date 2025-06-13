@@ -1,0 +1,55 @@
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 6em auto 2em;
+  padding: 2em;
+  gap: 2em;
+  max-width: 1200px;
+}
+
+.text-section {
+  flex: 2;
+}
+
+.image-section {
+  flex: 1;
+  text-align: right;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.slogan {
+  font-style: italic;
+  margin-bottom: 2em;
+  color: #444;
+}
+
+.section-block {
+  margin-bottom: 2em;
+}
+
+.section-block h2 {
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.section-block ul {
+  padding-left: 1.2em;
+}
+
+.section-block li {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}

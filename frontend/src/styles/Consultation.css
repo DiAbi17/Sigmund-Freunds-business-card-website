@@ -1,0 +1,65 @@
+.consultation-container {
+  max-width: 600px;
+  margin: 6em auto 2em;
+  padding: 2em;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-container h1 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.consultation-form button {
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-form button:hover {
+  background-color: #555;
+}
+
+.status-message {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.status-message.success {
+  color: green;
+}
+
+.status-message.error {
+  color: red;
+}
+
+
+.consultation-image {
+  display: block;
+  margin: 0 auto 1.5em;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,92 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Flex-контейнер на всю высоту */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Закреплённый хедер */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  color: white;
+  padding: 0.5em 1em; /* увеличенные отступы */
+  height: 80px; /* фиксированная высота */
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding-left: 200px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-menu li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu li a.active {
+  background: #555;
+  font-weight: bold;
+}
+
+/* Логотип приклеен справа */
+.nav-logo {
+  position: fixed;
+  /* right: 0; */
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  background: #333; /* фон хедера, чтобы перекрывал контент */
+  z-index: 1100; /* выше, чем у header */
+}
+
+.nav-logo img {
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Контент под хедером и над футером */
+.main-content {
+  flex: 1;
+  padding: 100px 2em 2em; /* отступ сверху = высоте header */
+}
+
+
+/* Футер прижат к низу */
+footer {
+  background: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  margin-top: auto;
+}

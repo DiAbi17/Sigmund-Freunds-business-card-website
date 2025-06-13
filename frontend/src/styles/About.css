@@ -1,0 +1,68 @@
+.about-page {
+  padding-top: 6em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.about-layout {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 3em;
+  padding: 2em;
+}
+
+.photo-section {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.photo-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  max-height: 100vh;
+}
+
+.text-section {
+  flex: 2;
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #333;
+}
+
+.text-section h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.text-section h2 {
+  margin-top: 1.5em;
+  color: #222;
+}
+
+.text-section ul {
+  padding-left: 1.2em;
+  margin-top: 0.5em;
+}
+
+.text-section li {
+  margin-bottom: 0.6em;
+}
+
+.slogan {
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+
+blockquote {
+  background: #f2f2f2;
+  padding: 1em;
+  border-left: 4px solid #ccc;
+  margin-top: 1em;
+  font-style: italic;
+}
