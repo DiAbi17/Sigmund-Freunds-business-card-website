@@ -61,33 +61,55 @@ docker-compose up --build
 
 ├── backend/
 │   ├── api/
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── forms.py
 │   │   ├── models.py          # Модель Consultation
 │   │   ├── views.py           # Обработка API-запросов
 │   │   ├── serializers.py     # DRF-сериализаторы
 │   │   ├── urls.py            # /api/consult/, /api/consultations/
-│   │   └── test/              # Тесты для API
+│   │   ├── test/ 
+│   │   |    └── test_consultation_api.py  # Тесты для API
 │   ├── backend/
+│   │   ├── asgi.py
 │   │   ├── settings.py
 │   │   ├── urls.py            # Админка и API
+│   │   └──  wsgi.py
 │   ├── db.sqlite3
-│   └── manage.py
+│   ├── manage.py
+│   ├── Dockerfile
+│   ├── postman_collection.json
+│   └── requirements.txt
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
+│   │   |    ├── Footer.js
+│   │   |    └── Header.js
 │   │   ├── pages/
+│   │   |    ├── About.js
+│   │   |    ├── Consultation.js
+│   │   |    ├── Contacts.js
+│   │   |    └── Home.js
 │   │   ├── styles/
+│   │   |    ├── About.css
+│   │   |    ├── Consultation.css
+│   │   |    ├── Contacts.css
+│   │   |    ├── Home.css
+│   │   |    └── main.css
+│   │   ├── media/
 │   │   ├── App.js
 │   │   ├── api.js
 │   │   └── index.js
 │   ├── public/index.html
+│   ├── Dockerfile
 │   └── package.json
 │
 ├── nginx/
 │   └── nginx.conf
 │
 ├── docker-compose.yml
-├── Dockerfile
+├── package.json
 ├── README.md
 ```
 ## 🔌 Основные эндпоинты
