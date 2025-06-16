@@ -110,7 +110,7 @@ docker-compose up --build
 │
 ├── docker-compose.yml
 ├── package.json
-├── README.md
+└── README.md
 ```
 ## 🔌 Основные эндпоинты
 

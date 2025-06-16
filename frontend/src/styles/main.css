@@ -90,3 +90,76 @@ footer {
   text-align: center;
   margin-top: auto;
 }
+
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 1101; /* выше меню */
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Анимация крестика */
+.burger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 750px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #333;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-logo {
+    position: static;
+    padding: 0;
+  }
+
+  .nav-logo img {
+    height: 60px;
+  }
+}
+
+
